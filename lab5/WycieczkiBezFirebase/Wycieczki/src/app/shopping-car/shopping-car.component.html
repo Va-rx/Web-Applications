@@ -1,0 +1,10 @@
+    <div class="content">
+        <p>Przedmioty w koszyku</p>
+        <div class="product" *ngFor="let product of basket">
+            <div class="name"> {{ product.name }}</div>
+            <div class="cost"> Cena: {{ product.price }} zł </div>
+            <div class="quantity"> Ilość: {{ product.amount }}</div>
+            <div class="sum"> Suma: {{ product.amount * product.price}} zł</div>
+        </div>
+    </div>
+

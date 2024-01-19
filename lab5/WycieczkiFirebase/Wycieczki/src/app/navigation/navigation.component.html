@@ -1,0 +1,22 @@
+<div class="nav">
+  <a routerLink="/" class="brandname"> Super Wycieczki</a>
+  <a routerLink="/trips" class="menu">Wycieczki</a>
+  <a routerLink="/new-trip" class="menu">Dodaj wycieczkę</a>
+  <div class="icons">
+    <a routerLink="/notifications"><img class="icon" src="assets/bell.png"></a>
+    <a routerLink="/settings"><img class="icon" src="assets/gear.png"></a>
+    <a routerLink="/bag"><img class="icon" src="assets/bag.png"></a>
+  </div>
+  <a routerLink="/shopping-car" class="shoppingCar">
+    <div
+      class="photoHolder"
+      [ngClass]="{
+        basketAbove: getAmount() >= 10,
+        basketBelow: getAmount() < 10
+      }"
+    > 
+    <p> {{ getPrice() }} zł {{ getAmount() }}</p>
+    <div><img class="photo" src="assets/shop.png" /></div>
+    </div>
+  </a>
+</div>

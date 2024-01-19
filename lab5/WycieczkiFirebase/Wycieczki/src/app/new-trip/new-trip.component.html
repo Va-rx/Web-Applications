@@ -1,0 +1,29 @@
+<div class="newTrip">
+    <p>Dodaj nową pozycję</p>
+    <br> <br>
+    <form #tripForm="ngForm" (ngSubmit)="tripCreate(tripForm.value, tripForm);">
+        <input type="text" [ngClass]="{invalidForm: (name.invalid && name.touched)}" minlength="4" required #name="ngModel" name="name" placeholder="Nazwa" ngModel>
+        <br> <br>
+        <input type="text" [ngClass]="{invalidForm: (country.invalid && country.touched)}" minlength="4" required #country="ngModel" name="country" placeholder="Kraj" ngModel>
+        <br> <br>
+        <input type="date" [ngClass]="{invalidForm: (startDate.invalid && startDate.touched)}" required #startDate="ngModel" name="startDate" placeholder="Start wycieczki" ngModel>
+        <br> <br>
+        <input type="date" [ngClass]="{invalidForm: (endDate.invalid && endDate.touched)}" required #endDate="ngModel" name="endDate" placeholder="Koniec wycieczki" ngModel>
+        <br> <br>
+        <input type="number" [ngClass]="{invalidForm: (price.invalid && price.touched)}" required #price="ngModel" name="price" placeholder="Cena" ngModel>
+        <br> <br>
+        <input type="number" [ngClass]="{invalidForm: (capacity.invalid && capacity.touched)}" required #capacity="ngModel" name="capacity" placeholder="Liczba miejsc" ngModel>
+        <br> <br>
+        <input type="text" [ngClass]="{invalidForm: (description.invalid && description.touched)}" minlength="10"required #description="ngModel" name="description" placeholder="Opis" ngModel>
+        <br> <br>
+        <input type="text" [ngClass]="{invalidForm: (image.invalid && image.touched)}" minlength="4" required #image="ngModel" name="image" placeholder="Adres zdjęcia" ngModel>
+        <br> <br>
+        <input type="text" [ngClass]="{invalidForm: (image1.invalid && image1.touched)}" minlength="4" required #image1="ngModel" name="image1" placeholder="Adres zdjęcia2" ngModel>
+        <br> <br>
+        <input type="text" [ngClass]="{invalidForm: (image2.invalid && image2.touched)}" minlength="4" required #image2="ngModel" name="image2" placeholder="Adres zdjęcia3" ngModel>
+        <br> <br>
+        <!-- <input type="text" [ngClass]="{invalidForm: (image.invalid && image.touched)}" minlength="4"  #actualimage="ngModel" name="actualimage" placeholder="Adres zdjęcia4" ngModel>
+        <br> <br> -->
+        <button class="butt" [disabled]="tripForm.invalid">Add</button>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+<app-filters></app-filters>
+<div class="content">
+  <div
+    class="card"
+    [ngClass]="{
+      expensive: trip.price == getExpensiveCost(trips),
+      cheap: trip.price == getCheapCost(trips),
+      danger:
+        trip.capacity - trip.amount < 4 && trip.capacity - trip.amount > 0,
+      end: trip.capacity - trip.amount == 0
+    }"
+    *ngFor="let trip of trips"
+  >
+    <picture class="photo">
+      <a routerLink="/trips/{{trip.id}}"><img src="{{ trip.image[0] }}" /></a>
+    </picture>
+
+    <div class="info">
+      <h1 class="title">{{ trip.name | uppercase }}</h1>
+      <h2 class="country">{{ trip.country | uppercase }}</h2>
+      <h3 class="date">{{ trip.startDate }} -> {{ trip.endDate }}</h3>
+      <h3 class="money">Cena wycieczki: {{ trip.price }} zł</h3>
+      <p class="text">
+        <i>{{ trip.description }}</i>
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="footer">
+      <button
+        class="addTrip"
+        *ngIf="trip.amount < trip.capacity"
+        (click)="add(trip)"
+      >
+        +
+      </button>
+      <p class="howMany">{{ trip.amount }}</p>
+      <button class="removeTrip" (click)="remove(trip)">-</button>
+    </div>
+
+    <div class="communicator">
+      <p
+        *ngIf="
+          trip.capacity - trip.amount < 4 && trip.capacity - trip.amount > 0
+        "
+      >
+        Pozostało {{ trip.capacity - trip.amount }} miejsc!
+      </p>
+      <p *ngIf="trip.capacity - trip.amount == 0">BRAK MIEJSC!</p>
+      <p *ngIf="trip.capacity - trip.amount > 3"></p>
+      <button class="deleteTrip" (click)="delete(trip)"></button>
+    </div>
+  </div>
+</div>

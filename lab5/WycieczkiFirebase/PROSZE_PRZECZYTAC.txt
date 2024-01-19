@@ -1,0 +1,3 @@
+W katalogu node_modules => @angular => fire => compat => firestore został zmodyfikowany plik: "interfaces.d.ts"
+Aby nie wysyłać wszystkich potężnych modułów dorzuciłem ten plik osobno.
+

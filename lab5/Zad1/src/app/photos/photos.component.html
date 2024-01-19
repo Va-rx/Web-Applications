@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="post" *ngFor="let photo of photos">
+        <p class="photoId">Zdjecie numer {{photo.id}}</p>
+        <p class="albumId">Number albumu: {{photo.albumId}}</p>
+        <p class="title">{{photo.title}}</p>
+        <a routerLink="/photos/{{photo.id}}"><img src="{{photo.thumbnailUrl}}"></a>
+    </div>
+</div>

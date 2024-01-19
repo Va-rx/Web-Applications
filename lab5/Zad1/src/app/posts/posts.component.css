@@ -1,0 +1,69 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    min-height: 10vh;
+    height: auto;
+    border: solid rgb(86, 185, 215) 3px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(125, 199, 174);
+}
+
+.id {
+    font-size: 20px;
+    color: rgb(21, 20, 20);
+}
+
+.userId {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 20px;
+    color: rgb(25, 72, 183);
+    font-weight: bold;
+    text-align: center;
+}
+
+.body {
+    text-align: center;
+    color: rgb(65, 67, 69);
+}
+
+.addPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(151, 220, 162);
+}
+
+input {
+    width: 10vw;
+    height: 3vh;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.addText {
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    height: 3vh;
+    width: 3vw;
+}

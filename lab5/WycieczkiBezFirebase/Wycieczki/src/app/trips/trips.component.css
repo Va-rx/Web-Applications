@@ -1,0 +1,233 @@
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#f0eff0, #faf8f9);
+  width: 70vw;
+}
+
+.content .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  background-image: linear-gradient(
+    rgba(180, 220, 253, 0.6),
+    rgba(171, 199, 255, 0.8)
+  );
+  width: 20vw;
+  margin: 10px;
+
+  backdrop-filter: blur(30px);
+
+  box-shadow: 0 0 30px lightgray;
+  border-radius: 15px;
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transition: 2s;
+}
+
+.content .card .photo {
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 24px 0px rgb(137, 140, 162);
+}
+
+.content .card .photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.content .card .info {
+  margin: 15px;
+}
+
+.content .card .info .title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.content .card .info .country {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #fff0f5;
+}
+
+.content .card .info .date {
+  font-size: 20px;
+  color: #f5f5dc;
+
+  margin-top: 5px;
+}
+
+.content .card .info .money {
+  margin-top: 15px;
+  color: #f8f8ff;
+}
+
+.content .card .info .text {
+  margin-top: 20px;
+  color: #f0ffff;
+}
+
+.content .card hr {
+  border-top: lightgray;
+  width: 90%;
+}
+
+.content .card .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 20px;
+  position: relative;
+
+  margin: 15px;
+}
+
+.content .card .footer button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px;
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.content .card .footer .removeTrip:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px;
+  font-size: 20px;
+  background-color: #fd5c63;
+  transition: 0.7s;
+}
+
+.content .card .footer .addTrip:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px;
+  font-size: 20px;
+  background-color: #17b169;
+  transition: 0.7s;
+}
+
+.content .card .communicator {
+  padding: 10px;
+  color: #dc143c;
+  font-weight: bold;
+}
+
+.content .card .footer .howMany {
+  position: absolute;
+  background-color: #f9f6ee;
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+}
+
+.expensive {
+  border: 3px solid #6efd72;
+}
+
+.cheap {
+  border: 3px solid #e73a5f;
+}
+
+.danger {
+  background-color: rgb(208, 203, 98);
+  transition: 2s ease-out;
+}
+
+.end {
+  background-color: rgb(213, 68, 28);
+  transition: 2s ease-out;
+}
+
+.deleteTrip {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 20px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border: 0px;
+  transition: 0.3s;
+}
+
+.deleteTrip:hover {
+  background-color: tomato;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 8192px) {
+  .content .card {
+    width: 20vw;
+  }
+
+  .content .card picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .content .card {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content .card {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content .card {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .card {
+    width: auto;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

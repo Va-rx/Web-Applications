@@ -1,0 +1,104 @@
+{
+  "Trips": [
+    {
+      "Name": "Piękno Berlina",
+      "Country": "Niemcy",
+      "StartDate": "22-05-2022",
+      "EndDate": "30-05-2022",
+      "Price": 700,
+      "Capacity": 10,
+      "Description": "Cudowna wycieczka po mieście Berlin. Wrażenia gwarantowane",
+      "Image": ["assets/photos/Niemcy.jpg", "assets/photos/Ukraina.jpg", "assets/photos/Czechy.jpg", "assets/photos/Brazylia.jpg"]
+    },
+    {
+      "Name": "Zwiedź Kijów już teraz",
+      "Country": "Ukraina",
+      "StartDate": "12-02-2022",
+      "EndDate": "17-02-2022",
+      "Price": 500,
+      "Capacity": 10,
+      "Description": "Niezapomniana przygoda w Kijowie. Pakuj się i jedź już teraz",
+      "Image": ["assets/photos/Ukraina.jpg", "assets/photos/Czechy.jpg"]
+    },
+    {
+      "Name": "Praga tu i teraz",
+      "Country": "Czechy",
+      "StartDate": "23-09-2022",
+      "EndDate": "25-10-2022",
+      "Price": 650,
+      "Capacity": 7,
+      "Description": "Jezeli myslisz, ze Czechy sa nudne to sie mylisz powaznie",
+      "Image": ["assets/photos/Czechy.jpg", "assets/photos/Norwegia.jpg", "assets/photos/Brazylia.jpg"]
+    },
+    {
+      "Name": "Buda(pesz)t",
+      "Country": "Węgry",
+      "StartDate": "01-01-2022",
+      "EndDate": "11-01-2022",
+      "Price": 900,
+      "Capacity": 22,
+      "Description": "Zwiedz stolice i największe miasto Węgier, położone w północnej części kraju",
+      "Image": ["assets/photos/Węgry.jpg", "assets/photos/Czechy.jpg", "assets/photos/Norwegia.jpg"]
+    },
+    {
+      "Name": "Paryż like Paris",
+      "Country": "Francja",
+      "StartDate": "06-09-2022",
+      "EndDate": "16-09-2022",
+      "Price": 1300,
+      "Capacity": 3,
+      "Description": "Francja nie zyje tylko bagietkami i beretami. To mit, przyjedz i zobacz",
+      "Image": ["assets/photos/Francja.jpg", "assets/photos/Norwegia.jpg"]
+    },
+    {
+      "Name": "Madrytowo",
+      "Country": "Hiszpania",
+      "StartDate": "12-12-2022",
+      "EndDate": "30-12-2022",
+      "Price": 1400,
+      "Capacity": 12,
+      "Description": "Jedna z najlepszych przygód i możliwych atrakcji w Twoim życiu!",
+      "Image": ["assets/photos/Hiszpania.jpg", "assets/photos/Brazylia.jpg"]
+    },
+    {
+      "Name": "Rzymska...",
+      "Country": "Włochy",
+      "StartDate": "14-07-2022",
+      "EndDate": "21-07-2022",
+      "Price": 900,
+      "Capacity": 5,
+      "Description": "Twoja okazja na zwiedzenie tzw. Wiecznego Miasta, nielimitowane atrakcje!",
+      "Image": ["assets/photos/Włochy.jpg", "assets/photos/Czechy.jpg"]
+    },
+    {
+      "Name": "Brasiliana",
+      "Country": "Brazylia",
+      "StartDate": "20-06-2022",
+      "EndDate": "10-07-2022",
+      "Price": 2000,
+      "Capacity": 10,
+      "Description": "Jedyna w swoim rodzaju wycieczka w siedzibie rządu Dystryktu Federalnego",
+      "Image": ["assets/photos/Brazylia.jpg", "assets/photos/Czechy.jpg"]
+    },
+    {
+      "Name": "Berno stolicą?",
+      "Country": "Szwajcaria",
+      "StartDate": "10-10-2022",
+      "EndDate": "15-10-2022",
+      "Price": 1111,
+      "Capacity": 9,
+      "Description": "Piękny kraj w którym nie tylko sie dowiesz, że nie posiada formalnej stolicy",
+      "Image": ["assets/photos/Szwajcaria.jpg", "assets/photos/Brazylia.jpg"]
+    },
+    {
+      "Name": "Oslo-nka",
+      "Country": "Norwegia",
+      "StartDate": "23-09-2022",
+      "EndDate": "30-09-2022",
+      "Price": 1321,
+      "Capacity": 14,
+      "Description": "Mozliwosc zwiedzenia siedziby władz sąsiedniego okręgu Viken",
+      "Image": ["assets/photos/Norwegia.jpg", "assets/photos/Czechy.jpg"]
+    }
+  ]
+}

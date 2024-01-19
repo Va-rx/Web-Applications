@@ -1,0 +1,44 @@
+<div class="everything">
+    <div class="content">
+        <a routerLink="/trips" class="menu">Powrót</a>
+        <p><b>Nazwa wycieczki: </b>{{ trips[id].name }}</p>
+        <p><b>Lokalizacja: </b>{{ trips[id].country}}</p>
+        <div class="photoBox" (click)="changePhoto()"><img src="{{ trips[id].image[index] }}"></div>
+        <p><b>Opis: </b>{{ trips[id].description }}</p>
+        <p><b>Koszt wycieczki: </b>{{ trips[id].price }} zł</p>
+        <p><b>Ocena: </b>{{ trips[id].likes - trips[id].dislikes }}</p>
+        <div class="rate">
+            <p>Oceń wycieczkę!</p>
+            <button class="btt likeTrip" (click)="like()"></button>
+            <button class="btt dislikeTrip" (click)="dislike()"></button>
+        </div>
+        <p>Dodaj do koszyka!</p>
+        <div class="action">
+            <button class="addTrip" (click)="add()">+</button>
+            <p class="howMany"> {{trips[id].amount}} </p>
+            <button class="removeTrip" (click)="remove()">-</button>
+        </div>
+    </div>
+    <div class="form">
+        <p><b>Dodaj nową opinię</b></p>
+        <br> <br>
+        <form #tripOpinion="ngForm" (ngSubmit)="tripOpinionCreate(tripOpinion.value, tripOpinion);">
+            <input type="text" #nick="ngModel" name="nick" placeholder="nick" ngModel>
+            <br> <br>
+            <!-- <input type="text" required [ngClass]="{invalidForm: (name.invalid && name.touched)}" minlength="4" #name="ngModel" name="name" placeholder="nazwa wycieczki" ngModel>
+            <br> <br> -->
+            <input type="text" required [ngClass]="{invalidForm: (description.invalid && description.touched)}" minlength="50" maxlength="500"  #description="ngModel" name="description" placeholder="opis" ngModel>
+            <p class="warning" *ngIf="(description.invalid && description.touched)">Opis musi zawierac od 50 do 500 znakow!</p>
+            <br> <br>
+            <input type="date" #data="ngModel" name="date" placeholder="data" ngModel>
+            <br> <br>
+            <button class="butt" [disabled]="tripOpinion.invalid">Add</button>
+        </form>
+
+    </div>
+    <div class="opinions" *ngFor="let opinion of opinions">
+        <p>Nazwa użytkownika: {{opinion.nick}} {{opinion.date}} </p>
+        <!-- <p>Nazwa wycieczki: {{ opinion.name }}</p> -->
+        <p> {{opinion.description}} </p>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="addPost">
+    <p class="addText">Dodaj nowy post! </p>
+    <form #postForm="ngForm" (ngSubmit)="postCreate(postForm.value)">
+        <input type="number" required #userId="ngModel" minlength="1" name="userId" placeholder="userId" ngModel>
+        <input type="text" required #title="ngModel" minlength="5" name="title" placeholder="title" ngModel>
+        <input type="text" required #body="ngModel" minlength="10" name="body" placeholder="body" ngModel>
+        <button [disabled]="postForm.invalid">Add</button>
+    </form>
+</div>
+<div class="content">
+    <div class="post" *ngFor="let post of posts">
+        <p class="id">Post numer: {{post.id}}</p>
+        <p class="userId">Uzytkownik nr. {{post.userId}}</p>
+        <p class="title">{{post.title}}</p>
+        <p class="body">{{post.body}}</p>
+    </div>
+</div>

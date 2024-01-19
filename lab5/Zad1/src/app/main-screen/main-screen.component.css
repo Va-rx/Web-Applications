@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    justify-content: center;
+    height: 95vh;
+    align-items: center;
+    background-color: tomato;
+}
+
+p {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
