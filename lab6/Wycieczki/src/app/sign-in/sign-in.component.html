@@ -1,0 +1,10 @@
+<div class="log"> 
+    <p>Zaloguj się!</p>
+    <form #signInForm="ngForm" (ngSubmit)="signIn(signInForm.value);">
+        <input type="text" required #email="ngModel" name="email" placeholder="E-mail" ngModel>
+        <br> <br>
+        <input type="text" minlength="6" required #password="ngModel" name="password" placeholder="Password" ngModel>
+        <br> <br>
+        <button class="butt" [disabled]="signInForm.invalid">Zaloguj</button>
+    </form>
+</div>

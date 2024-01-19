@@ -1,0 +1,10 @@
+<div class="register">
+    <p>Zarejestruj sie!</p>
+    <form #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value);">
+    <input type="email" required #email="ngModel" name="email" placeholder="E-mail" ngModel>
+        <br> <br>
+        <input type="password" required minlength="6" #password="ngModel" name="password" placeholder="Password" ngModel>
+        <br> <br>
+        <button class="butt" [disabled]="signUpForm.invalid">Zapisz się</button>
+    </form>
+</div>

@@ -1,0 +1,35 @@
+<div class="nav">
+  <a routerLink="/" class="brandname"> Super Wycieczki</a>
+  <a routerLink="/trips" class="menu">Wycieczki</a>
+  <div *ngIf="!(afAuth.user | async)" class="account">
+    <a class="account-link" routerLink="/sign-up">Rejestracja</a>
+    <a class="account-link" routerLink="/sign-in">Logowanie</a>
+  </div>
+  <div *ngIf="service.currentUser.roles.menager == true || service.currentUser.roles.admin == true">
+    <a routerLink="/new-trip" class="menu">Edycja wycieczek</a>
+  </div>
+  <div *ngIf=" service.currentUser.roles.admin == true ">
+    <a class="panel" routerLink="/panel">Panel</a>
+  </div>
+  <div class="icons">
+    <a routerLink="/notifications"><img class="icon" src="assets/bell.png"></a>
+    <a routerLink="/settings"><img class="icon" src="assets/gear.png"></a>
+    <a routerLink="/bag"><img class="icon" src="assets/bag.png"></a>
+  </div>
+  <div class="powitanie" *ngIf="(afAuth.user | async)">
+    {{ service.currentUser.email }}
+    <a class="signOut" (click)="signOut()">Wyloguj</a>
+  </div>
+  <a routerLink="/shopping-car" class="shoppingCar">
+    <div
+      class="photoHolder"
+      [ngClass]="{
+        basketAbove: getAmount() >= 10,
+        basketBelow: getAmount() < 10
+      }"
+    > 
+    <p> {{ getPrice() }} zł {{ getAmount() }}</p>
+    <div><img class="photo" src="assets/shop.png" /></div>
+    </div>
+  </a>
+</div>

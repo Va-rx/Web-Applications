@@ -1,0 +1,15 @@
+<div class="persistence">
+    <div class="box">
+        <a class="link" (click)="changeToLocal()">Local</a>
+        <a class="link" (click)="changeToSession()">Session</a>
+        <a class="link" (click)="changeToNone()">None</a>
+    </div>
+</div>
+<p class="usersHeader">Lista użytkowników</p>
+<div class="user" *ngFor="let user of users">
+    <p>{{user.email}}</p>
+    <p class="change" (click)="changeClient(user)" >Client:{{user.roles.client}}</p>
+    <p class="change" (click)="changeAdmin(user)" >Admin:{{user.roles.admin}}</p>
+    <p class="change" (click)="changeMenager(user)" >Menager:{{user.roles.menager}}</p>
+    <p class="change" (click)="changeBanned(user)" >Banned:{{user.roles.banned}}</p>
+</div>
