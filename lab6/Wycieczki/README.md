@@ -1,3 +1,10 @@
+# Lab6
+
+The latest laboratory exercise showcases a finished product – a fully functional website where users can register, log in, browse available trips, and make reservations or purchases. Additionally, an administrator account has the capability to add new trips, edit existing ones, and modify user accounts through the admin panel.
+
+It is needed to create environment.prod.ts, environment.ts files where we are going to storage firebase API informations
+
+
 # Wycieczki
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
