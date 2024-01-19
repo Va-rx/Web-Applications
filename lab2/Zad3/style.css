@@ -1,0 +1,136 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+} 
+
+.content .card{
+    display: flex;  
+    flex-direction: column;
+
+    width: 15vw;
+    margin: 10px;
+
+    box-shadow: 0 0 30px lightgray;
+    border-radius: 15px;
+}
+
+.content .card .img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.content .card .info{
+    margin: 15px;
+}
+
+.content .card .info .title{
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.content .card .info .descr{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+
+    margin-top: 2px;
+}
+
+.content .card .info .text{
+    font-size: 15px;
+    color: darkgray;
+}
+
+.content .card hr{
+    border-top: lightgray;
+    width: 90%;
+}
+
+.content .card .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 15px;
+}
+
+.content .card .footer .button{
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: bold;
+    color:white;
+
+    border: 0px;
+    padding: 10px;
+    background-color: tomato;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content .card .footer .numbers p{
+    font-size: 13px;
+    margin-bottom:2px;
+    margin-top: 2px;
+    padding-left: 18px;
+}
+
+.content .card .footer .numbers .comments{
+    background-image: url(pictures/comment.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.content .card .footer .numbers .likes{
+    background-image: url(pictures/like.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+@media screen and (max-width: 8192px) {
+    .content .card{
+        width:20vw;
+    }
+
+    .content .card picture img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .content .card{
+        width:20vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content .card{
+        width:25vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content .card{
+        width:35vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .card{
+        width:auto;
+    }
+}
+

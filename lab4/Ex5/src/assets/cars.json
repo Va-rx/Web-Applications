@@ -1,0 +1,22 @@
+{
+    "Audi":
+    {
+            "RS":["Różowy", "Czarny"],
+            "Q8":["Biały"],
+            "A1":["Granatowy", "Niebieski", "Zielony"],
+            "S3":["Czerwony"]
+    },
+    "BMW":
+    {
+        "i3":["Biały", "Czarny"],
+        "i8":["Przezroczysty", "Srebrny", "Zielony"],
+        "X6":["Żółty"]
+    },
+    "Toyota":
+    {
+        "Rav4":["Fioletowy", "Czarny"],
+        "Corolla":["Biały"],
+        "C-HR":["Pomarańczowy", "Szary", "Granatowy"],
+        "Aygo X":["Żółty", "Błękitny"]
+    }
+}

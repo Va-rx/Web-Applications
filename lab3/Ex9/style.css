@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+p {
+    color: darkgray;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header p{
+    display: inline;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(81, 81, 243);
+    padding: 5px;
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+#header #slash {
+    color:lightblue;
+}
+
+.employee {
+    display: none;
+    animation: none;
+}
+
+.employee-visible {
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	animation: inherit;
+}
+
+.photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    margin-bottom: 30px;
+}
+
+.employee p{
+    font-size: 30px;
+}
+
+.name p{
+    color: rgb(103, 176, 232);
+    margin-bottom: 10px;
+}
+
+.position p{
+    margin-bottom: 30px;
+}
+
+.describtion p {
+    text-align: center;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#button {
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(170, 232, 232);
+    border-color: rgb(49, 248, 248);
+    font-size: 20px;
+    color: rgba(236, 234, 234, 0.995);
+    border-radius: 5px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1)
+}
+
+#button:hover, #swipeButtons button:hover {
+    background-color: rgb(175, 246, 246);
+    transition: 0.3s;
+}
+
+#swipeButtons button{
+    background-color: rgb(170, 232, 232);
+    border-color: rgb(49, 248, 248);
+    color: rgba(236, 234, 234, 0.995);
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+#leftButton{
+    position: absolute;
+    left: 100px;
+    top: 250px;
+}
+
+#rightButton{
+    position: absolute;
+    right: 100px;
+    top: 250px
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+  

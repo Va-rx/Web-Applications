@@ -1,0 +1,28 @@
+<div class="selection">
+
+  <p>Wybierz markę</p>
+  <select [(ngModel)] = "brand" (change) = "brandSelected()">
+    <ng-container *ngIf="brandVisibility">
+      <option disabled selected></option>
+      <option *ngFor="let brand of info | keyvalue"> {{ brand.key }} </option>
+    </ng-container>
+  </select>
+
+  <p>Wybierz model</p>
+  <select [(ngModel)]="model" (change)="modelSelected()">
+    <ng-container *ngIf="modelVisibility">
+      <option disabled selected></option>
+      <option *ngFor="let model of info[brand] | keyvalue"> {{ model.key }} </option>
+    </ng-container>
+  </select>
+
+  <p>Wybierz kolor</p>
+  <select [(ngModel)]="color" (change)="colorSelected()">
+    <ng-container *ngIf="colorVisibility">
+      <option disabled selected></option>
+      <option *ngFor="let color of colorPalette" > {{ color }} </option>
+    </ng-container>
+  </select>
+
+  <p class="result" *ngIf="resumeVisibility">{{ "Wybrałeś " + brand + " " + model + " " + color}}</p>
+</div>

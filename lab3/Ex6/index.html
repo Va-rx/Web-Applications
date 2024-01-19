@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ex6</title>
+</head>
+<body>
+        <div id="contacts">
+
+        </div>
+
+        <form id="content">
+
+            <div class="inputs">
+        
+                    <div class="content-input">
+                        <p>IMIĘ I NAZWISKO</p>
+                        <input 
+                            type="text"
+                            id="name"
+                            name="name"
+                            required="true"
+                            required pattern="^\p{Lu}{1}\p{Ll}+[ ]\p{Lu}{1}\p{Ll}+(-{1}\p{Lu}\p{Ll}+)?"
+                        >
+
+                    </div>
+
+                    <div class="content-input">
+                        <p>TELEFON</p>
+                        <input 
+                                type="text"
+                                id="phone"
+                                name="phone"
+                                required="true"
+                                required pattern="^((\d[\s-]*){8}\d{1})|((\+[\s-]*){1}(\d[\s-]*){11}\d{1})"
+                        >
+                    </div>
+                        
+                    <div id="content-add">
+
+                        <input type="button" value="Dodaj" id="button">
+        
+                    </div>
+            </div>
+
+        </form>
+</body>
+</html>

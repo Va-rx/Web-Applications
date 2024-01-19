@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ex8</title>
+</head>
+<body>
+    <div id="section">
+        <p>New password</p>
+        <div class="passwordInput">
+            <input type="password" id="password" onkeyup="checkPassword(this.value)">
+            <div id="showPassword"></div>
+        </div>
+        <br>
+        <p>Repeat new password</p>
+        <div class="passwordInput" id="pswID">
+            <input type="password" id="repeatedPassword" onkeyup="arePasswordsEquals(password.value, this.value)">
+            <div id="showPassword2"></div>
+        </div>
+        <br>
+        <p>Password requirements</p>
+        <div id="requirements">
+            <ul>
+                <li id="characters"><img src=fail.png id="failure1">at least 8 characters</li>
+                <li id="specialCharacter"><img src=fail.png id="failure2">at least one special character</li>
+                <li id="capitalLetter"><img src=fail.png id="failure3">at least one capital letter</li>
+                <li id="digit"><img src=fail.png id="failure4">at least one digit</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

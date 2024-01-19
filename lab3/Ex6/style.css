@@ -1,0 +1,123 @@
+body{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+
+    width:100%;
+    height: 10vh;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px;
+
+    border:1px solid rgb(172, 144, 134);
+    box-shadow: 0px 2px 2px 0px;
+    background-color:white;
+}
+
+#content form{
+    width:100%;
+    margin:30px;
+    margin-right:0px;
+    display:flex;
+}
+
+#content p{
+    margin: 0;
+}
+
+#content .inputs {
+    display: flex;
+    align-items: center;
+}
+
+#content .inputs .content-input{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 5px;
+}
+
+#content .inputs .content-input input {
+    height: 3vh;
+    font-size: 20px;
+}
+
+#content #content-add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+#content #content-add #button {
+    height: 3.5vh;
+    width: 20vw;
+    border-color: solid green 2px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#content #content-add #button:hover {
+    background-color: rgb(197, 245, 197);
+    transition: 0.3s;
+}
+
+#contacts .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 10vh;
+    width: 80vw;
+
+    font-size: 30px;
+    background-color: rgb(244, 244, 244);
+    border: solid darkgray 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px;
+}
+
+#contacts .contact .section-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts .contact .section-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.section-phone-info, .section-name-info {
+    margin: 0px;
+    padding: 5px;
+}
+
+.section-phone-info {
+    font-size: 20px;
+}
+
+.section-name-info {
+    font-weight: bold;
+}

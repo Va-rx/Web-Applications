@@ -1,0 +1,17 @@
+<div class="nav">
+  <a href="#" class="brandname"> Super Wycieczki</a>
+  <div class="shoppingCar">
+    <div
+      class="photoHolder"
+      [ngClass]="{
+        basketAbove: itemsInBasket >= 10,
+        basketBelow: itemsInBasket < 10
+      }"
+    >
+      <p>
+        {{ itemsInBasket }}
+      </p>
+      <img class="photo" src="assets/shop.png" />
+    </div>
+  </div>
+</div>
